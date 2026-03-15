@@ -57,4 +57,6 @@ after_install = "pg_management.setup.after_install"
 
 # Login redirect: sets home_page in login JSON response to /app/{slug}
 # Frappe JS reads data.home_page and does window.location.href = home_page
+
+# Role-based login redirect — sets the /app/ URL for Frappe's JS login handler
 on_session_creation = 'pg_management.pg_management.portal_routing.user_login_redirect'
