@@ -12,5 +12,6 @@ setuptools.setup(
 	packages=setuptools.find_packages(),
 	zip_safe=False,
 	include_package_data=True,
+	license="MIT",
 	install_requires=install_requires
 )
