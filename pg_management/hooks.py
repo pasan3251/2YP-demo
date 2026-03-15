@@ -4,6 +4,7 @@ app_publisher = "Department of Computer Engineering"
 app_description = "Managing MPhil, PhD, MSc, and MEng lifecycles."
 app_email = "pgcoordinator.ce@eng.pdn.ac.lk"
 app_license = "mit"
+app_logo_url = "/assets/pg_management/images/logo.png"
 
 # Includes in <head>
 # ------------------
@@ -22,11 +23,21 @@ app_license = "mit"
 # Hook on document methods and events
 doc_events = {
     "PG Applicant": {
-        "validate": "pg_management.security_hooks.validate_applicant"
+        "validate": "pg_management.security_hooks.validate_applicant",
+        "on_update": "pg_management.pg_management.pg_events.handle_applicant"
     },
     "PG Progress Report": {
         "validate": "pg_management.security_hooks.validate_progress_report",
         "on_update": "pg_management.notifications.validate_and_send_review_emails"
+    },
+    "PG Student Registration": {
+        "on_update": "pg_management.pg_management.pg_events.handle_registration"
+    },
+    "PG Thesis Submission": {
+        "on_update": "pg_management.pg_management.pg_events.handle_thesis"
+    },
+    "File": {
+        "after_insert": "pg_management.pg_management.pg_events.handle_file_upload"
     }
 }
 
@@ -35,14 +46,25 @@ doc_events = {
 # REST API implementations exposed securely
 override_whitelisted_methods = {
     "pg_management.api.get_student_status": "pg_management.api.get_student_status",
-    "pg_management.api.submit_external_application": "pg_management.api.submit_external_application"
+    "pg_management.api.submit_external_application": "pg_management.api.submit_external_application",
+    "pg_management.api_events_repo.list_student_events": "pg_management.pg_management.api_events_repo.list_student_events",
+    "pg_management.api_events_repo.list_upcoming_events": "pg_management.pg_management.api_events_repo.list_upcoming_events",
+    "pg_management.api_events_repo.list_overdue_events": "pg_management.pg_management.api_events_repo.list_overdue_events",
+    "pg_management.api_events_repo.mark_event_completed": "pg_management.pg_management.api_events_repo.mark_event_completed",
+    "pg_management.api_events_repo.list_user_notifications": "pg_management.pg_management.api_events_repo.list_user_notifications",
+    "pg_management.api_events_repo.fetch_document_notifications": "pg_management.pg_management.api_events_repo.fetch_document_notifications",
+    "pg_management.api_events_repo.resend_notification": "pg_management.pg_management.api_events_repo.resend_notification",
+    "pg_management.api_events_repo.list_student_documents": "pg_management.pg_management.api_events_repo.list_student_documents",
+    "pg_management.api_events_repo.fetch_workflow_documents": "pg_management.pg_management.api_events_repo.fetch_workflow_documents",
+    "pg_management.api_events_repo.fetch_visible_documents": "pg_management.pg_management.api_events_repo.fetch_visible_documents"
 }
 
 # Scheduled Tasks (Cron)
 # ----------------------
 scheduler_events = {
     "daily_long": [
-        "pg_management.tasks.check_progress_report_deadlines"
+        "pg_management.pg_management.tasks.generate_progress_reports",
+        "pg_management.pg_management.tasks.process_academic_events"
     ]
 }
 
@@ -51,12 +73,3 @@ scheduler_events = {
 
 # Setup scripts to run after app installation
 after_install = "pg_management.setup.after_install"
-
-
-# --- Custom PG Login Routing ---
-
-# Login redirect: sets home_page in login JSON response to /app/{slug}
-# Frappe JS reads data.home_page and does window.location.href = home_page
-
-# Role-based login redirect — sets the /app/ URL for Frappe's JS login handler
-on_session_creation = 'pg_management.pg_management.portal_routing.user_login_redirect'
