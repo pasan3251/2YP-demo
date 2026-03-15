@@ -1,0 +1,1 @@
+A new postgraduate registration for {{ doc.student_name }} has been submitted and awaits verification.

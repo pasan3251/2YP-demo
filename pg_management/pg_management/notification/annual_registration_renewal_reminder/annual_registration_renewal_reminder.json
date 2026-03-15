@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state in ['Registered', 'Renewed', 'Renewal Pending']",
+ "condition_type": "Python",
+ "creation": "2026-03-14 21:57:20.688323",
+ "date_changed": "next_renewal_due_date",
+ "days_in_advance": 30,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Student Registration",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.student_name }}, your annual postgraduate registration renewal is due on {{ doc.next_renewal_due_date }}. Please arrange for fee payment and submission.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 21:57:20.688323",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Annual Registration Renewal Reminder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "student_email"
+  },
+  {
+   "receiver_by_role": "PG Coordinator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Action Required: Registration Renewal Due in 30 Days"
+}

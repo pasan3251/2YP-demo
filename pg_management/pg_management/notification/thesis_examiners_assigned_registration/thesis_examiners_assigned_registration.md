@@ -1,0 +1,1 @@
+Examiners have been successfully assigned to evaluate the thesis for {{ doc.student_name }}. The examination can now commence.

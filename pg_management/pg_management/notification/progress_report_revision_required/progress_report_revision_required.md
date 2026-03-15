@@ -1,0 +1,1 @@
+Dear {{ doc.student_name }}, your {{ doc.report_type }} progress report requires revision. Please review the notes and resubmit.

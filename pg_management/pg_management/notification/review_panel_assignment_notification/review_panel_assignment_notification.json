@@ -1,0 +1,39 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.panel_status == 'Nominated' or doc.panel_status == 'Active'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.190029",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Review Panel",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "You have been assigned to the Review Panel for student {{ doc.student }}. Panel type: {{ doc.panel_type }}.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.190029",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Review Panel Assignment Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "hod_nominee"
+  },
+  {
+   "receiver_by_document_field": "external_member"
+  },
+  {
+   "receiver_by_document_field": "supervisor_as_observer"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Review Panel Assignment: {{ doc.student }}",
+ "value_changed": "panel_status"
+}

@@ -1,0 +1,28 @@
+{
+    "name": "PG Publication",
+    "module": "PG Management",
+    "custom": 0,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "title",
+            "label": "Title",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "journal_conference",
+            "label": "Journal/Conference",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "date_published",
+            "label": "Date Published",
+            "fieldtype": "Date"
+        }
+    ],
+    "doctype": "DocType"
+}

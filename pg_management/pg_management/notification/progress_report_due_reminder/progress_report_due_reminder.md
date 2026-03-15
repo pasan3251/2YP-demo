@@ -1,0 +1,1 @@
+Dear {{ doc.student_name }}, your {{ doc.report_type }} progress report is due on {{ doc.due_date }}. Please submit it through the portal.

@@ -1,0 +1,403 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 22:42:43.368379",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student_record",
+  "submission_type",
+  "form_7_2a",
+  "thesis_file",
+  "status",
+  "workflow_state",
+  "sec_core",
+  "pg_student_record",
+  "student_registration",
+  "supervisor_assigned",
+  "student_name",
+  "registration_number",
+  "degree_programme",
+  "department",
+  "sec_id",
+  "thesis_title",
+  "approved_short_title",
+  "research_area",
+  "initial_submission_date",
+  "thesis_status",
+  "sec_timing",
+  "eligibility_date",
+  "submission_deadline",
+  "examination_start_date",
+  "examination_decision_date",
+  "final_submission_due_date",
+  "final_archive_date",
+  "sec_sup",
+  "supervisor_certification_flag",
+  "supervisor_certification_date",
+  "supervisor_certification_attachment",
+  "sec_files",
+  "thesis_main_file",
+  "plagiarism_file",
+  "temporary_binding_submission_flag",
+  "supporting_documents",
+  "sec_admin",
+  "preliminary_check_remarks",
+  "examiner_count",
+  "evaluations_completed",
+  "board_recommendation_summary",
+  "final_examination_outcome",
+  "revision_notes",
+  "archive_reference",
+  "remarks",
+  "internal_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "THS-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "THS-YYYY-."
+  },
+  {
+   "fieldname": "student_record",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "submission_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Submission Type",
+   "options": "Draft\nFinal Bound",
+   "reqd": 1
+  },
+  {
+   "fieldname": "form_7_2a",
+   "fieldtype": "Attach",
+   "label": "Form 7.2A Attachment"
+  },
+  {
+   "fieldname": "thesis_file",
+   "fieldtype": "Attach",
+   "label": "Main Thesis File",
+   "reqd": 1
+  },
+  {
+   "default": "Submitted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Submitted\nUnder Review\nRevisions Requested\nApproved"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "sec_core",
+   "fieldtype": "Section Break",
+   "label": "Core Linkage"
+  },
+  {
+   "fieldname": "pg_student_record",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked PG Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_registration",
+   "fieldtype": "Link",
+   "label": "Linked Student Registration",
+   "options": "PG Student Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supervisor_assigned",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Supervisor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "degree_programme",
+   "fieldtype": "Data",
+   "label": "Degree Programme"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "sec_id",
+   "fieldtype": "Section Break",
+   "label": "Thesis Identity"
+  },
+  {
+   "fieldname": "thesis_title",
+   "fieldtype": "Text",
+   "label": "Thesis Title"
+  },
+  {
+   "fieldname": "approved_short_title",
+   "fieldtype": "Data",
+   "label": "Approved Short Title"
+  },
+  {
+   "fieldname": "research_area",
+   "fieldtype": "Data",
+   "label": "Research Area"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "initial_submission_date",
+   "fieldtype": "Date",
+   "label": "Initial Submission Date"
+  },
+  {
+   "fieldname": "thesis_status",
+   "fieldtype": "Data",
+   "label": "Thesis Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_timing",
+   "fieldtype": "Section Break",
+   "label": "Submission Timing"
+  },
+  {
+   "fieldname": "eligibility_date",
+   "fieldtype": "Date",
+   "label": "Eligibility Date"
+  },
+  {
+   "fieldname": "submission_deadline",
+   "fieldtype": "Date",
+   "label": "Submission Deadline"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "examination_start_date",
+   "fieldtype": "Date",
+   "label": "Examination Start Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "examination_decision_date",
+   "fieldtype": "Date",
+   "label": "Examination Decision Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "final_submission_due_date",
+   "fieldtype": "Date",
+   "label": "Final Submission Due Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "final_archive_date",
+   "fieldtype": "Date",
+   "label": "Final Archive Date"
+  },
+  {
+   "fieldname": "sec_sup",
+   "fieldtype": "Section Break",
+   "label": "Supervisor Certification"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "supervisor_certification_flag",
+   "fieldtype": "Check",
+   "label": "Supervisor Certification Flag"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supervisor_certification_date",
+   "fieldtype": "Date",
+   "label": "Supervisor Certification Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supervisor_certification_attachment",
+   "fieldtype": "Attach",
+   "label": "Supervisor Certification Attachment"
+  },
+  {
+   "fieldname": "sec_files",
+   "fieldtype": "Section Break",
+   "label": "Student Thesis Files"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "thesis_main_file",
+   "fieldtype": "Attach",
+   "label": "Thesis Main File"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "plagiarism_file",
+   "fieldtype": "Attach",
+   "label": "Plagiarism / Supporting File"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "temporary_binding_submission_flag",
+   "fieldtype": "Check",
+   "label": "Temporary Binding Submission Flag"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Submission Documents"
+  },
+  {
+   "fieldname": "sec_admin",
+   "fieldtype": "Section Break",
+   "label": "Administrative & Examination Summary"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "preliminary_check_remarks",
+   "fieldtype": "Text Editor",
+   "label": "Preliminary Check Remarks"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "examiner_count",
+   "fieldtype": "Int",
+   "label": "Total Examiners Assigned",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "evaluations_completed",
+   "fieldtype": "Int",
+   "label": "Evaluations Completed",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "board_recommendation_summary",
+   "fieldtype": "Text Editor",
+   "label": "Board Recommendation Summary"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "final_examination_outcome",
+   "fieldtype": "Select",
+   "label": "Final Examination Outcome",
+   "options": "\nAccept\nAccept with Minor Corrections\nMajor Revision\nReject"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "revision_notes",
+   "fieldtype": "Text Editor",
+   "label": "Revision Notes"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "archive_reference",
+   "fieldtype": "Data",
+   "label": "Archive Reference"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Thesis Submission",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-14 22:52:51.174051",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Thesis Submission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Coordinator",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Head of Department",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Supervisor",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PG Student",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

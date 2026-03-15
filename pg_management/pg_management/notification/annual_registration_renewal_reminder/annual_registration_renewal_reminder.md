@@ -1,0 +1,1 @@
+Dear {{ doc.student_name }}, your annual postgraduate registration renewal is due on {{ doc.next_renewal_due_date }}. Please arrange for fee payment and submission.

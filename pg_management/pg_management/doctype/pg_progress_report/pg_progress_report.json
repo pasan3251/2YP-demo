@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 20:18:10.422474",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student_record",
+  "report_type",
+  "period_start",
+  "period_end",
+  "status",
+  "student_report",
+  "supervisor_feedback",
+  "supervisor_signed_report",
+  "panel_recommendation",
+  "publications",
+  "conference_attendances"
+ ],
+ "fields": [
+  {
+   "default": "PGR-YYYY-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PGR-YYYY-"
+  },
+  {
+   "fieldname": "student_record",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Report Type",
+   "options": "Monthly\nHalf-Yearly\nYearly\nFinal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period_start",
+   "fieldtype": "Date",
+   "label": "Period Start"
+  },
+  {
+   "fieldname": "period_end",
+   "fieldtype": "Date",
+   "label": "Period End"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted to Supervisor\nForwarded to HoD / FHDC\nPanel Evaluated\nCompleted",
+   "reqd": 1
+  },
+  {
+   "description": "The progress report uploaded by the student",
+   "fieldname": "student_report",
+   "fieldtype": "Attach",
+   "label": "Student Report"
+  },
+  {
+   "fieldname": "supervisor_feedback",
+   "fieldtype": "Small Text",
+   "label": "Supervisor Feedback"
+  },
+  {
+   "fieldname": "supervisor_signed_report",
+   "fieldtype": "Attach",
+   "label": "Supervisor Signed Report"
+  },
+  {
+   "depends_on": "eval:doc.report_type == 'Yearly'",
+   "fieldname": "panel_recommendation",
+   "fieldtype": "Select",
+   "label": "Panel Recommendation",
+   "options": "\nSatisfactory\nUnsatisfactory\nResubmit"
+  },
+  {
+   "fieldname": "publications",
+   "fieldtype": "Table",
+   "label": "Publications",
+   "options": "PG Publication"
+  },
+  {
+   "fieldname": "conference_attendances",
+   "fieldtype": "Table",
+   "label": "Conference Attendances",
+   "options": "PG Conference Attendance"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-14 22:46:36.931820",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Progress Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Coordinator",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PG Student",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Supervisor",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Head of Department",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

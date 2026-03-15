@@ -1,0 +1,1 @@
+The registration status for {{ doc.student_name }} has been updated to {{ doc.workflow_state }}.

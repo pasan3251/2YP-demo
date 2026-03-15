@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Revision Required'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.159315",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Progress Report",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.student_name }}, your {{ doc.report_type }} progress report requires revision. Please review the notes and resubmit.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.159315",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Progress Report Revision Required",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "student_email"
+  },
+  {
+   "receiver_by_document_field": "supervisor"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Action Required: Revision Requested for your Progress Report",
+ "value_changed": "workflow_state"
+}

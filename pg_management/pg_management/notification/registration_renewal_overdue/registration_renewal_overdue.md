@@ -1,0 +1,1 @@
+Dear {{ doc.student_name }}, your annual postgraduate registration renewal was due on {{ doc.next_renewal_due_date }} and is now OVERDUE.

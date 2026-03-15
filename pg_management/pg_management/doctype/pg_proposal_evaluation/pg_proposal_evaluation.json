@@ -1,0 +1,93 @@
+{
+    "name": "PG Proposal Evaluation",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "PEVAL-YYYY-.####",
+            "default": "PEVAL-YYYY-."
+        },
+        {
+            "fieldname": "proposal",
+            "label": "Research Proposal",
+            "fieldtype": "Link",
+            "options": "PG Research Proposal",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "reviewer",
+            "label": "Reviewer",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "evaluation_form",
+            "label": "Evaluation Form",
+            "fieldtype": "Attach"
+        },
+        {
+            "fieldname": "comments",
+            "label": "Comments",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "recommendation",
+            "label": "Recommendation",
+            "fieldtype": "Select",
+            "options": "Accept\nReject\nRevise",
+            "reqd": 1,
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

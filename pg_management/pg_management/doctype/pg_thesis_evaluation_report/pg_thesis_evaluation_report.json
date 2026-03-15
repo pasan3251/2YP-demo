@@ -1,0 +1,92 @@
+{
+    "name": "PG Thesis Evaluation Report",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "TER-YYYY-.####",
+            "default": "TER-YYYY-."
+        },
+        {
+            "fieldname": "thesis_submission",
+            "label": "Thesis Submission",
+            "fieldtype": "Link",
+            "options": "PG Thesis Submission",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "examiner",
+            "label": "Examiner",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "report_document",
+            "label": "Report Document",
+            "fieldtype": "Attach",
+            "reqd": 1
+        },
+        {
+            "fieldname": "recommendation",
+            "label": "Recommendation",
+            "fieldtype": "Select",
+            "options": "Accept\nMinor Revisions\nMajor Revisions\nReject",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "comments",
+            "label": "Comments",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Draft\nSubmitted",
+            "default": "Draft",
+            "in_list_view": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1
+        },
+        {
+            "role": "PG Examiner",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "submit": 1,
+            "if_owner": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ],
+    "doctype": "DocType"
+}

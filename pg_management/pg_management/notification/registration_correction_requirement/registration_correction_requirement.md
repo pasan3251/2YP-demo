@@ -1,0 +1,1 @@
+Your registration requires correction. Please review the admin notes and resubmit: {{ doc.admin_notes }}

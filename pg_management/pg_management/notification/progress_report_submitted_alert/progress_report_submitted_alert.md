@@ -1,0 +1,1 @@
+The student {{ doc.student_name }} has submitted their {{ doc.report_type }} Progress Report. It is now awaiting Supervisor Review.

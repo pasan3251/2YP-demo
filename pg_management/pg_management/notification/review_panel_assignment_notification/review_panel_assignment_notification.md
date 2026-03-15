@@ -1,0 +1,1 @@
+You have been assigned to the Review Panel for student {{ doc.student }}. Panel type: {{ doc.panel_type }}.

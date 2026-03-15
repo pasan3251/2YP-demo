@@ -1,0 +1,94 @@
+{
+    "name": "PG Review Panel Evaluation",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "PAN-YYYY-.",
+            "default": "PAN-YYYY-."
+        },
+        {
+            "fieldname": "linked_document_type",
+            "label": "Linked Document Type",
+            "fieldtype": "Select",
+            "options": "PG Progress Report\nPG Thesis Submission",
+            "reqd": 1
+        },
+        {
+            "fieldname": "linked_document",
+            "label": "Linked Document",
+            "fieldtype": "Dynamic Link",
+            "options": "linked_document_type",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "date_of_review",
+            "label": "Date of Review",
+            "fieldtype": "Date",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "panel_members",
+            "label": "Panel Members",
+            "fieldtype": "Table",
+            "options": "PG Review Panel Member",
+            "reqd": 1
+        },
+        {
+            "fieldname": "recommendation",
+            "label": "Recommendation",
+            "fieldtype": "Select",
+            "options": "Satisfactory\nResubmit\nUnsatisfactory\nApproved\nRejected",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "comments",
+            "label": "Comments",
+            "fieldtype": "Small Text"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1
+        },
+        {
+            "role": "Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "submit": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1
+        },
+        {
+            "role": "Supervisor",
+            "read": 1
+        }
+    ],
+    "doctype": "DocType"
+}

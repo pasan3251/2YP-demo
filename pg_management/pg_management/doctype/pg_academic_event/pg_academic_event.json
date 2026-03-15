@@ -1,0 +1,280 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 23:03:44.509121",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "sec_links",
+  "linked_student",
+  "linked_pg_student_record",
+  "linked_registration",
+  "linked_application",
+  "linked_progress_report",
+  "linked_thesis_submission",
+  "sec_details",
+  "event_title",
+  "event_type",
+  "event_category",
+  "event_description",
+  "event_date",
+  "due_date",
+  "reminder_offset_days",
+  "severity_level",
+  "status",
+  "sec_control",
+  "responsible_role",
+  "responsible_user",
+  "auto_generated_flag",
+  "source_workflow",
+  "escalation_enabled",
+  "escalation_level",
+  "completed_flag",
+  "completed_date",
+  "cancelled_flag",
+  "cancel_reason",
+  "remarks",
+  "sec_notifications",
+  "last_reminder_sent_date",
+  "reminder_count",
+  "escalated_flag",
+  "escalation_date"
+ ],
+ "fields": [
+  {
+   "default": "EVENT-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EVENT-YYYY-.####\nEVENT-YYYY-."
+  },
+  {
+   "fieldname": "sec_links",
+   "fieldtype": "Section Break",
+   "label": "Core Linkage"
+  },
+  {
+   "fieldname": "linked_student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Student User",
+   "options": "User"
+  },
+  {
+   "fieldname": "linked_pg_student_record",
+   "fieldtype": "Link",
+   "label": "Linked PG Student Record",
+   "options": "PG Student Record"
+  },
+  {
+   "fieldname": "linked_registration",
+   "fieldtype": "Link",
+   "label": "Linked Registration",
+   "options": "PG Student Registration"
+  },
+  {
+   "fieldname": "linked_application",
+   "fieldtype": "Link",
+   "label": "Linked Application",
+   "options": "PG Applicant"
+  },
+  {
+   "fieldname": "linked_progress_report",
+   "fieldtype": "Link",
+   "label": "Linked Progress Report",
+   "options": "PG Progress Report"
+  },
+  {
+   "fieldname": "linked_thesis_submission",
+   "fieldtype": "Link",
+   "label": "Linked Thesis Submission",
+   "options": "PG Thesis Submission"
+  },
+  {
+   "fieldname": "sec_details",
+   "fieldtype": "Section Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "event_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "options": "\nApplication Deadline\nProposal Review Deadline\nRegistration Window\nRenewal Deadline\nMonthly Progress Reminder\nHalf-Year Review Due\nYearly Progress Review Due\nPanel Review Deadline\nThesis Submission Deadline\nExaminer Evaluation Deadline\nFinal Thesis Submission Deadline\nViva / Oral Presentation\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_category",
+   "fieldtype": "Data",
+   "label": "Event Category"
+  },
+  {
+   "fieldname": "event_description",
+   "fieldtype": "Text",
+   "label": "Event Description"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "default": "7",
+   "fieldname": "reminder_offset_days",
+   "fieldtype": "Int",
+   "label": "Reminder Offset Days"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "severity_level",
+   "fieldtype": "Select",
+   "label": "Severity Level",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "default": "Upcoming",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Scheduled\nUpcoming\nDue Today\nOverdue\nCompleted\nCancelled\nEscalated"
+  },
+  {
+   "fieldname": "sec_control",
+   "fieldtype": "Section Break",
+   "label": "Control & Tracking"
+  },
+  {
+   "fieldname": "responsible_role",
+   "fieldtype": "Link",
+   "label": "Responsible Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "responsible_user",
+   "fieldtype": "Link",
+   "label": "Responsible User",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_generated_flag",
+   "fieldtype": "Check",
+   "label": "Auto Generated Flag"
+  },
+  {
+   "fieldname": "source_workflow",
+   "fieldtype": "Data",
+   "label": "Source Workflow"
+  },
+  {
+   "default": "0",
+   "fieldname": "escalation_enabled",
+   "fieldtype": "Check",
+   "label": "Escalation Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "escalation_level",
+   "fieldtype": "Int",
+   "label": "Escalation Level"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed_flag",
+   "fieldtype": "Check",
+   "label": "Completed Flag"
+  },
+  {
+   "fieldname": "completed_date",
+   "fieldtype": "Date",
+   "label": "Completed Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancelled_flag",
+   "fieldtype": "Check",
+   "label": "Cancelled Flag"
+  },
+  {
+   "fieldname": "cancel_reason",
+   "fieldtype": "Data",
+   "label": "Cancel Reason"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "sec_notifications",
+   "fieldtype": "Section Break",
+   "label": "Notification Tracking"
+  },
+  {
+   "fieldname": "last_reminder_sent_date",
+   "fieldtype": "Date",
+   "label": "Last Reminder Sent Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "reminder_count",
+   "fieldtype": "Int",
+   "label": "Reminder Count"
+  },
+  {
+   "default": "0",
+   "fieldname": "escalated_flag",
+   "fieldtype": "Check",
+   "label": "Escalated Flag"
+  },
+  {
+   "fieldname": "escalation_date",
+   "fieldtype": "Date",
+   "label": "Escalation Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-14 23:03:44.509121",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Academic Event",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

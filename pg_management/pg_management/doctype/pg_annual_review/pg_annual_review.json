@@ -1,0 +1,109 @@
+{
+    "name": "PG Annual Review",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "AR-YYYY-.####",
+            "default": "AR-YYYY-."
+        },
+        {
+            "fieldname": "student",
+            "label": "Student Record",
+            "fieldtype": "Link",
+            "options": "PG Student Record",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "academic_year",
+            "label": "Academic Year",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "review_panel",
+            "label": "Review Panel",
+            "fieldtype": "Link",
+            "options": "PG Review Panel"
+        },
+        {
+            "fieldname": "student_report",
+            "label": "Student Report",
+            "fieldtype": "Attach"
+        },
+        {
+            "fieldname": "supervisor_feedback",
+            "label": "Supervisor Feedback",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "hod_feedback",
+            "label": "HoD Feedback",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Draft\nSubmitted\nSupervisor Reviewed\nHoD Reviewed\nPanel Evaluation\nCompleted",
+            "default": "Draft",
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "submit": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

@@ -1,0 +1,162 @@
+{
+ "app": "pg_management",
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Student Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Student-Overdue-Events\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Student-Pending-Progress\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Student-Upcoming-Renewals\"}}]",
+ "creation": "2026-03-15 00:43:18.279601",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "study",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "PG Student Portal",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Application",
+   "link_count": 0,
+   "link_to": "PG Applicant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Registration",
+   "link_count": 0,
+   "link_to": "PG Student Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Progress Reports",
+   "link_count": 0,
+   "link_to": "PG Progress Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Thesis",
+   "link_count": 0,
+   "link_to": "PG Thesis Submission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Events & Deadlines",
+   "link_count": 0,
+   "link_to": "PG Academic Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Notifications",
+   "link_count": 0,
+   "link_to": "PG Notification Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Documents",
+   "link_count": 0,
+   "link_to": "PG Document Repository",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-15 17:11:54.544136",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Student Portal",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "PG Student"
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Application",
+   "link_to": "PG Applicant",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Registration",
+   "link_to": "PG Student Registration",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Progress Reports",
+   "link_to": "PG Progress Report",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Thesis",
+   "link_to": "PG Thesis Submission",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Events & Deadlines",
+   "link_to": "PG Academic Event",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Notifications",
+   "link_to": "PG Notification Log",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "My Documents",
+   "link_to": "PG Document Repository",
+   "stats_filter": "",
+   "type": "DocType"
+  }
+ ],
+ "title": "PG Student Portal",
+ "type": "Workspace"
+}

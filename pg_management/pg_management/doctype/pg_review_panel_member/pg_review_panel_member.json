@@ -1,0 +1,25 @@
+{
+    "name": "PG Review Panel Member",
+    "module": "PG Management",
+    "custom": 0,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "panel_member",
+            "label": "Panel Member",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "role",
+            "label": "Role",
+            "fieldtype": "Select",
+            "options": "Chairman\nMember\nExternal Member",
+            "default": "Member",
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType"
+}

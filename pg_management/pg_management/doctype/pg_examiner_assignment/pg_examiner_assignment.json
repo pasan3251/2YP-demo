@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 20:18:10.702429",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "examiner_name",
+  "institution",
+  "email",
+  "naming_series",
+  "workflow_state",
+  "linked_thesis_submission",
+  "examiner",
+  "examiner_role",
+  "appointment_date",
+  "due_date",
+  "evaluation_status",
+  "confidential_access_flag",
+  "signed_appointment_attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "examiner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Examiner Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "default": "EXAMN-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EXAMN-YYYY-.####\nEXAMN-YYYY-."
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "linked_thesis_submission",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Thesis Submission",
+   "options": "PG Thesis Submission",
+   "reqd": 1
+  },
+  {
+   "fieldname": "examiner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Examiner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "examiner_role",
+   "fieldtype": "Select",
+   "label": "Examiner Role",
+   "options": "Internal\nExternal\nChairperson",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Pending",
+   "fieldname": "evaluation_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Evaluation Status",
+   "options": "Pending\nUnder Review\nCompleted\nOverdue\nCancelled"
+  },
+  {
+   "default": "1",
+   "fieldname": "confidential_access_flag",
+   "fieldtype": "Check",
+   "label": "Confidential Access Flag"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "signed_appointment_attachment",
+   "fieldtype": "Attach",
+   "label": "Signed Appointment Attachment"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-14 22:52:50.571736",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Examiner Assignment",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

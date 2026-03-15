@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 22:44:21.017184",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "linked_thesis_submission",
+  "linked_pg_student_record",
+  "final_corrected_thesis_file",
+  "final_submission_date",
+  "archive_date",
+  "archive_identifier",
+  "release_permission_flag",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "ARC-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ARC-YYYY-.####\nARC-YYYY-."
+  },
+  {
+   "fieldname": "linked_thesis_submission",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Thesis Submission",
+   "options": "PG Thesis Submission",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linked_pg_student_record",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked PG Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "final_corrected_thesis_file",
+   "fieldtype": "Attach",
+   "label": "Final Corrected Thesis File",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "final_submission_date",
+   "fieldtype": "Date",
+   "label": "Final Submission Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "archive_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Archive Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "archive_identifier",
+   "fieldtype": "Data",
+   "label": "Archive Identifier"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "1",
+   "fieldname": "release_permission_flag",
+   "fieldtype": "Check",
+   "label": "Release / Usage Permission"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-14 22:52:51.064821",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Final Thesis Archive",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

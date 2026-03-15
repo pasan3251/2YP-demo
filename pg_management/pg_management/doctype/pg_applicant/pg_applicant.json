@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 20:56:05.537030",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "applicant_name",
+  "email",
+  "mobile",
+  "programme",
+  "prospective_supervisor",
+  "research_topic",
+  "status",
+  "application_doc",
+  "proposal_doc",
+  "decision_date",
+  "workflow_state",
+  "sec_eval",
+  "assigned_hod",
+  "assigned_coordinator",
+  "interview_required",
+  "interview_date",
+  "final_recommendation",
+  "final_decision",
+  "remarks",
+  "sec_docs",
+  "application_form",
+  "research_proposal_attachment",
+  "supervisor_consent",
+  "degree_certificate",
+  "birth_certificate",
+  "recommendation_letters",
+  "amended_from",
+  "assigned_reviewers"
+ ],
+ "fields": [
+  {
+   "default": "APP-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "APP-YYYY-."
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Applicant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "programme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Selected Programme",
+   "options": "PG Programme",
+   "reqd": 1
+  },
+  {
+   "description": "Select the internal supervisor",
+   "fieldname": "prospective_supervisor",
+   "fieldtype": "Link",
+   "label": "Prospective Supervisor",
+   "options": "User"
+  },
+  {
+   "fieldname": "research_topic",
+   "fieldtype": "Small Text",
+   "label": "Research Topic"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nApplication Received\nUnder Review\nInterview Scheduled\nSenate Ratification\nApproved\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_doc",
+   "fieldtype": "Attach",
+   "label": "Application Form"
+  },
+  {
+   "fieldname": "proposal_doc",
+   "fieldtype": "Attach",
+   "label": "Research Proposal"
+  },
+  {
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Decision Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application Status",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "sec_eval",
+   "fieldtype": "Section Break",
+   "label": "Evaluation Details"
+  },
+  {
+   "fieldname": "assigned_hod",
+   "fieldtype": "Link",
+   "label": "Assigned HoD",
+   "options": "User"
+  },
+  {
+   "fieldname": "assigned_coordinator",
+   "fieldtype": "Link",
+   "label": "Assigned Coordinator",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "interview_required",
+   "fieldtype": "Check",
+   "label": "Interview Required"
+  },
+  {
+   "depends_on": "eval:doc.interview_required==1",
+   "fieldname": "interview_date",
+   "fieldtype": "Datetime",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "final_recommendation",
+   "fieldtype": "Select",
+   "label": "Final Recommendation",
+   "options": "\nRecommended\nNot Recommended\nPending"
+  },
+  {
+   "fieldname": "final_decision",
+   "fieldtype": "Select",
+   "label": "Final Decision",
+   "options": "\nApproved\nRejected\nConditional Approval\nReturned for Revision"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "sec_docs",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "application_form",
+   "fieldtype": "Attach",
+   "label": "Application Form"
+  },
+  {
+   "fieldname": "research_proposal_attachment",
+   "fieldtype": "Attach",
+   "label": "Research Proposal"
+  },
+  {
+   "fieldname": "supervisor_consent",
+   "fieldtype": "Attach",
+   "label": "Supervisor Consent"
+  },
+  {
+   "fieldname": "degree_certificate",
+   "fieldtype": "Attach",
+   "label": "Degree Certificate"
+  },
+  {
+   "fieldname": "birth_certificate",
+   "fieldtype": "Attach",
+   "label": "Birth Certificate"
+  },
+  {
+   "fieldname": "recommendation_letters",
+   "fieldtype": "Attach",
+   "label": "Recommendation Letters (Confidential)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Applicant",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "assigned_reviewers",
+   "fieldtype": "Table",
+   "label": "Assigned Reviewers",
+   "options": "PG Application Reviewer"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-14 21:36:02.981079",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Applicant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Coordinator",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Head of Department",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PG Student",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

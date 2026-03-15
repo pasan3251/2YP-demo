@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state in ['Draft', 'Pending Submission', 'Revision Required']",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.018041",
+ "date_changed": "due_date",
+ "days_in_advance": 7,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Progress Report",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.student_name }}, your {{ doc.report_type }} progress report is due on {{ doc.due_date }}. Please submit it through the portal.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.018041",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Progress Report Due Reminder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "student_email"
+  },
+  {
+   "receiver_by_document_field": "supervisor"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Action Required: {{ doc.report_type }} Progress Report Due Soon"
+}

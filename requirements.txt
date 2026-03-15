@@ -1,0 +1,2 @@
+# dependencies for pg_management custom app
+frappe

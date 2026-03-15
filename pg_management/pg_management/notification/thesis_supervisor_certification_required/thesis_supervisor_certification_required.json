@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Supervisor Certification Pending'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:52:55.637349",
+ "date_changed": "modified",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Thesis Submission",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Supervisor, the student {{ doc.student_name }} has requested supervisor certification for their thesis titled '{{ doc.thesis_title }}'. Please review the submission and certify online.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:52:55.637349",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Thesis Supervisor Certification Required",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "supervisor_assigned"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Action Required: Certify Thesis Submission for {{ doc.student_name }}"
+}

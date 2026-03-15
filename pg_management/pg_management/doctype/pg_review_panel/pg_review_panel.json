@@ -1,0 +1,64 @@
+{
+    "name": "PG Review Panel",
+    "module": "PG Management",
+    "custom": 0,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "PNL-YYYY-.####",
+            "default": "PNL-YYYY-."
+        },
+        {
+            "fieldname": "panel_name",
+            "label": "Panel Name/Description",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "members",
+            "label": "Members",
+            "fieldtype": "Table",
+            "options": "PG Review Panel Member"
+        },
+        {
+            "fieldname": "date_formed",
+            "label": "Date Formed",
+            "fieldtype": "Date"
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

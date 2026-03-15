@@ -1,0 +1,9 @@
+[project]
+name = "pg_management"
+authors = [
+    { name = "Department of Computer Engineering", email = "pgcoordinator.ce@eng.pdn.ac.lk"}
+]
+description = "Post Graduate Student Management System"
+dependencies = ["frappe"]
+readme = "README.md"
+version = "0.0.1"

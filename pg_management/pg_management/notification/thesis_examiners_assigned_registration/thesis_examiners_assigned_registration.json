@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Examiners Assigned'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:52:55.752507",
+ "date_changed": "modified",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Thesis Submission",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Examiners have been successfully assigned to evaluate the thesis for {{ doc.student_name }}. The examination can now commence.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:52:55.752507",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Thesis Examiners Assigned Registration",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "PG Coordinator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Examiners Assigned for {{ doc.student_name }} Thesis"
+}

@@ -1,0 +1,1 @@
+The registration for {{ doc.student_name }} has been officially approved. Effective Registration Date: {{ doc.effective_registration_date }}

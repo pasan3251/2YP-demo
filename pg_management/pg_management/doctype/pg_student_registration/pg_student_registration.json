@@ -1,0 +1,345 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 20:56:06.054532",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student",
+  "registration_date",
+  "academic_year",
+  "documents",
+  "status",
+  "workflow_state",
+  "sec_links",
+  "pg_application",
+  "pg_student_record",
+  "sec_dates",
+  "admission_approval_date",
+  "registration_window_start",
+  "registration_window_end",
+  "initial_registration_date",
+  "effective_registration_date",
+  "expected_completion_date",
+  "next_renewal_due_date",
+  "last_renewal_date",
+  "sec_admin",
+  "registration_status",
+  "renewal_status",
+  "coordinator_assigned",
+  "hod_assigned",
+  "admin_notes",
+  "decision_date",
+  "sec_flags",
+  "fees_paid_flag",
+  "registration_documents_complete_flag",
+  "supervisor_approval_flag",
+  "department_approval_flag",
+  "sec_docs",
+  "proof_of_fee_payment",
+  "signed_registration_form",
+  "approval_letter",
+  "leave_postponement_request",
+  "withdrawal_request",
+  "supporting_documents",
+  "amended_from",
+  "student_name",
+  "student_email"
+ ],
+ "fields": [
+  {
+   "default": "REG-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "REG-YYYY-.####\nREG-YYYY-."
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Registration Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Data",
+   "label": "Academic Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Registration Documents"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nApproved\nRejected"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "sec_links",
+   "fieldtype": "Section Break",
+   "label": "Linkages"
+  },
+  {
+   "fieldname": "pg_application",
+   "fieldtype": "Link",
+   "label": "Linked PG Application",
+   "options": "PG Applicant"
+  },
+  {
+   "fieldname": "pg_student_record",
+   "fieldtype": "Link",
+   "label": "Linked PG Student Record",
+   "options": "PG Student Record"
+  },
+  {
+   "fieldname": "sec_dates",
+   "fieldtype": "Section Break",
+   "label": "Registration & Dates"
+  },
+  {
+   "fieldname": "admission_approval_date",
+   "fieldtype": "Date",
+   "label": "Admission Approval Date"
+  },
+  {
+   "fieldname": "registration_window_start",
+   "fieldtype": "Date",
+   "label": "Registration Window Start"
+  },
+  {
+   "fieldname": "registration_window_end",
+   "fieldtype": "Date",
+   "label": "Registration Window End"
+  },
+  {
+   "fieldname": "initial_registration_date",
+   "fieldtype": "Date",
+   "label": "Initial Registration Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "effective_registration_date",
+   "fieldtype": "Date",
+   "label": "Effective Registration Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "expected_completion_date",
+   "fieldtype": "Date",
+   "label": "Expected Completion Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "next_renewal_due_date",
+   "fieldtype": "Date",
+   "label": "Next Renewal Due Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "last_renewal_date",
+   "fieldtype": "Date",
+   "label": "Last Renewal Date"
+  },
+  {
+   "fieldname": "sec_admin",
+   "fieldtype": "Section Break",
+   "label": "Administrative Status"
+  },
+  {
+   "fieldname": "registration_status",
+   "fieldtype": "Data",
+   "label": "Registration Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "renewal_status",
+   "fieldtype": "Data",
+   "label": "Renewal Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coordinator_assigned",
+   "fieldtype": "Link",
+   "label": "Coordinator Assigned",
+   "options": "User"
+  },
+  {
+   "fieldname": "hod_assigned",
+   "fieldtype": "Link",
+   "label": "HoD Assigned",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "admin_notes",
+   "fieldtype": "Text",
+   "label": "Admin Notes"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Decision Date"
+  },
+  {
+   "fieldname": "sec_flags",
+   "fieldtype": "Section Break",
+   "label": "Completion Indicators"
+  },
+  {
+   "default": "0",
+   "fieldname": "fees_paid_flag",
+   "fieldtype": "Check",
+   "label": "Fees Paid"
+  },
+  {
+   "default": "0",
+   "fieldname": "registration_documents_complete_flag",
+   "fieldtype": "Check",
+   "label": "Registration Documents Complete"
+  },
+  {
+   "default": "0",
+   "fieldname": "supervisor_approval_flag",
+   "fieldtype": "Check",
+   "label": "Supervisor Approval Complete"
+  },
+  {
+   "default": "0",
+   "fieldname": "department_approval_flag",
+   "fieldtype": "Check",
+   "label": "Department Approval Complete"
+  },
+  {
+   "fieldname": "sec_docs",
+   "fieldtype": "Section Break",
+   "label": "Document Uploads"
+  },
+  {
+   "fieldname": "proof_of_fee_payment",
+   "fieldtype": "Attach",
+   "label": "Proof of Fee Payment"
+  },
+  {
+   "fieldname": "signed_registration_form",
+   "fieldtype": "Attach",
+   "label": "Signed Registration Form"
+  },
+  {
+   "fieldname": "approval_letter",
+   "fieldtype": "Attach",
+   "label": "Approval Letter"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "leave_postponement_request",
+   "fieldtype": "Attach",
+   "label": "Leave / Postponement Request Attachment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "withdrawal_request",
+   "fieldtype": "Attach",
+   "label": "Withdrawal Request Attachment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Student Registration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "student_email",
+   "fieldtype": "Data",
+   "label": "Student Email"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-14 21:53:06.574814",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Student Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Coordinator",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Head of Department",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PG Student",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

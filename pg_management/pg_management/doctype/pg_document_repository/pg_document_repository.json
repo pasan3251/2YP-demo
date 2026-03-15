@@ -1,0 +1,256 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 23:03:45.083160",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "sec_links",
+  "linked_student",
+  "linked_pg_student_record",
+  "linked_application",
+  "linked_registration",
+  "linked_progress_report",
+  "linked_thesis_submission",
+  "sec_meta",
+  "document_title",
+  "document_type",
+  "category",
+  "file_attachment",
+  "file_version",
+  "uploaded_by",
+  "uploaded_date",
+  "source_workflow",
+  "confidential_flag",
+  "active_flag",
+  "archive_flag",
+  "notes",
+  "sec_access",
+  "visible_to_student",
+  "visible_to_supervisor",
+  "visible_to_examiner",
+  "visible_to_coordinator",
+  "visible_to_hod",
+  "visible_to_panel",
+  "retention_type",
+  "replacement_of",
+  "signature_required_flag"
+ ],
+ "fields": [
+  {
+   "default": "DOC-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DOC-YYYY-.####\nDOC-YYYY-."
+  },
+  {
+   "fieldname": "sec_links",
+   "fieldtype": "Section Break",
+   "label": "Core Linkage"
+  },
+  {
+   "fieldname": "linked_student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Student",
+   "options": "User"
+  },
+  {
+   "fieldname": "linked_pg_student_record",
+   "fieldtype": "Link",
+   "label": "Linked PG Student Record",
+   "options": "PG Student Record"
+  },
+  {
+   "fieldname": "linked_application",
+   "fieldtype": "Link",
+   "label": "Linked Application",
+   "options": "PG Applicant"
+  },
+  {
+   "fieldname": "linked_registration",
+   "fieldtype": "Link",
+   "label": "Linked Registration",
+   "options": "PG Student Registration"
+  },
+  {
+   "fieldname": "linked_progress_report",
+   "fieldtype": "Link",
+   "label": "Linked Progress Report",
+   "options": "PG Progress Report"
+  },
+  {
+   "fieldname": "linked_thesis_submission",
+   "fieldtype": "Link",
+   "label": "Linked Thesis Submission",
+   "options": "PG Thesis Submission"
+  },
+  {
+   "fieldname": "sec_meta",
+   "fieldtype": "Section Break",
+   "label": "Document Metadata"
+  },
+  {
+   "fieldname": "document_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "\nApplication Document\nResearch Proposal\nCertificate\nRecommendation Letter\nProgress Report\nPanel Report\nSigned Evaluation\nThesis File\nFinal Corrected Thesis\nPublication\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "file_attachment",
+   "fieldtype": "Attach",
+   "label": "File Attachment"
+  },
+  {
+   "default": "1.0",
+   "fieldname": "file_version",
+   "fieldtype": "Data",
+   "label": "File Version"
+  },
+  {
+   "fieldname": "uploaded_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Uploaded By",
+   "options": "User"
+  },
+  {
+   "fieldname": "uploaded_date",
+   "fieldtype": "Datetime",
+   "label": "Uploaded Date"
+  },
+  {
+   "fieldname": "source_workflow",
+   "fieldtype": "Data",
+   "label": "Source Workflow"
+  },
+  {
+   "default": "0",
+   "fieldname": "confidential_flag",
+   "fieldtype": "Check",
+   "label": "Confidential"
+  },
+  {
+   "default": "1",
+   "fieldname": "active_flag",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "archive_flag",
+   "fieldtype": "Check",
+   "label": "Archived"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "sec_access",
+   "fieldtype": "Section Break",
+   "label": "Access & Control"
+  },
+  {
+   "default": "1",
+   "fieldname": "visible_to_student",
+   "fieldtype": "Check",
+   "label": "Visible to Student"
+  },
+  {
+   "default": "1",
+   "fieldname": "visible_to_supervisor",
+   "fieldtype": "Check",
+   "label": "Visible to Supervisor"
+  },
+  {
+   "default": "0",
+   "fieldname": "visible_to_examiner",
+   "fieldtype": "Check",
+   "label": "Visible to Examiner"
+  },
+  {
+   "default": "1",
+   "fieldname": "visible_to_coordinator",
+   "fieldtype": "Check",
+   "label": "Visible to Coordinator"
+  },
+  {
+   "default": "1",
+   "fieldname": "visible_to_hod",
+   "fieldtype": "Check",
+   "label": "Visible to HoD"
+  },
+  {
+   "default": "0",
+   "fieldname": "visible_to_panel",
+   "fieldtype": "Check",
+   "label": "Visible to Panel"
+  },
+  {
+   "default": "Permanent",
+   "fieldname": "retention_type",
+   "fieldtype": "Select",
+   "label": "Retention Type",
+   "options": "Permanent\nTemporary"
+  },
+  {
+   "fieldname": "replacement_of",
+   "fieldtype": "Link",
+   "label": "Replacement Of / Previous Version",
+   "options": "PG Document Repository"
+  },
+  {
+   "default": "0",
+   "fieldname": "signature_required_flag",
+   "fieldtype": "Check",
+   "label": "Signature Required"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-14 23:03:45.083160",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Document Repository",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

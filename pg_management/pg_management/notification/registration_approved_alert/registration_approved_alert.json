@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Registered'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 21:57:20.659983",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Student Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "The registration for {{ doc.student_name }} has been officially approved. Effective Registration Date: {{ doc.effective_registration_date }}",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 21:57:20.659983",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Registration Approved Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "student_email"
+  },
+  {
+   "receiver_by_role": "PG Coordinator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Registration Approved: {{ doc.student_name }}",
+ "value_changed": "workflow_state"
+}

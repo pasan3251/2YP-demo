@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Submitted'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.102426",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Progress Report",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "The student {{ doc.student_name }} has submitted their {{ doc.report_type }} Progress Report. It is now awaiting Supervisor Review.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.102426",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Progress Report Submitted Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "supervisor"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Submitted: {{ doc.report_type }} Progress Report for {{ doc.student_name }}",
+ "value_changed": "workflow_state"
+}

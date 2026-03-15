@@ -1,0 +1,25 @@
+{
+    "name": "PG Supervisor Assignment",
+    "module": "PG Management",
+    "custom": 0,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "supervisor",
+            "label": "Supervisor",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "role",
+            "label": "Role",
+            "fieldtype": "Select",
+            "options": "Principal\nCo-Supervisor",
+            "default": "Principal",
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType"
+}

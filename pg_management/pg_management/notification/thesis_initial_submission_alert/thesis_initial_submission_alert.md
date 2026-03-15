@@ -1,0 +1,1 @@
+The thesis titled '{{ doc.thesis_title }}' by {{ doc.student_name }} has been formally submitted and is now awaiting Preliminary Check.

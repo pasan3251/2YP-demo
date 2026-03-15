@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 20:56:05.958577",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student",
+  "renewal_date",
+  "academic_year",
+  "status",
+  "workflow_state",
+  "linked_student_registration",
+  "student_email",
+  "renewal_cycle",
+  "renewal_due_date",
+  "reminder_sent_date",
+  "submission_date",
+  "fee_payment_status",
+  "supporting_attachment",
+  "verified_by",
+  "verification_date",
+  "notes",
+  "amended_from",
+  "student_name"
+ ],
+ "fields": [
+  {
+   "default": "REN-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "REN-YYYY-.####\nREN-YYYY-."
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Record",
+   "options": "PG Student Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "renewal_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Renewal Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Data",
+   "label": "Academic Year",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nApproved\nRejected"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "linked_student_registration",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Student Registration",
+   "options": "PG Student Registration",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "linked_student_registration.student_email",
+   "fieldname": "student_email",
+   "fieldtype": "Data",
+   "label": "Student Email"
+  },
+  {
+   "fieldname": "renewal_cycle",
+   "fieldtype": "Data",
+   "label": "Renewal Cycle / Academic Year"
+  },
+  {
+   "fieldname": "renewal_due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Renewal Due Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "reminder_sent_date",
+   "fieldtype": "Date",
+   "label": "Reminder Sent Date"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "fee_payment_status",
+   "fieldtype": "Select",
+   "label": "Fee Payment Status",
+   "options": "\nPending\nPaid\nWaived"
+  },
+  {
+   "fieldname": "supporting_attachment",
+   "fieldtype": "Attach",
+   "label": "Supporting Attachment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": "Verification Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Registration Renewal",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-14 21:53:07.003638",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Registration Renewal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Coordinator",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "PG Head of Department",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PG Student",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

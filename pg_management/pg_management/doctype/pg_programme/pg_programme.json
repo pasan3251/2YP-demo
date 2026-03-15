@@ -1,0 +1,76 @@
+{
+    "name": "PG Programme",
+    "module": "PG Management",
+    "custom": 0,
+    "istable": 0,
+    "autoname": "field:programme_code",
+    "fields": [
+        {
+            "fieldname": "programme_code",
+            "label": "Programme Code",
+            "fieldtype": "Data",
+            "unique": 1,
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "programme_name",
+            "label": "Programme Name",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "duration_years",
+            "label": "Duration (Years)",
+            "fieldtype": "Float",
+            "reqd": 1
+        },
+        {
+            "fieldname": "type",
+            "label": "Programme Type",
+            "fieldtype": "Select",
+            "options": "Research\nCoursework",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1
+        },
+        {
+            "role": "PG Examiner",
+            "read": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ],
+    "doctype": "DocType"
+}

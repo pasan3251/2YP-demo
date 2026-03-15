@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Submitted'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 21:57:20.586729",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Student Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "A new postgraduate registration for {{ doc.student_name }} has been submitted and awaits verification.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 21:57:20.586729",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Registration Submission Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "PG Coordinator"
+  },
+  {
+   "receiver_by_role": "PG Head of Department"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "New PG Registration Submitted: {{ doc.student_name }}",
+ "value_changed": "workflow_state"
+}

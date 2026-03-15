@@ -1,0 +1,27 @@
+{
+    "name": "PG Conference Attendance",
+    "module": "PG Management",
+    "custom": 0,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "conference_name",
+            "label": "Conference Name",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "location",
+            "label": "Location",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "date",
+            "label": "Date",
+            "fieldtype": "Date",
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType"
+}

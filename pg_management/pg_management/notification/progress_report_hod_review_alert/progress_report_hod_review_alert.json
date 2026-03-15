@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'HoD Review'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.121838",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Progress Report",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "The supervisor has forwarded the {{ doc.report_type }} Progress Report for {{ doc.student_name }} for HoD Review.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.121838",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Progress Report HoD Review Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "PG Head of Department"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "HoD Review Required: {{ doc.report_type }} Progress Report",
+ "value_changed": "workflow_state"
+}

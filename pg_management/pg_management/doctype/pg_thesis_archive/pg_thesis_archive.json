@@ -1,0 +1,79 @@
+{
+    "name": "PG Thesis Archive",
+    "module": "PG Management",
+    "custom": 0,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "ARC-YYYY-.####",
+            "default": "ARC-YYYY-."
+        },
+        {
+            "fieldname": "student",
+            "label": "Student Record",
+            "fieldtype": "Link",
+            "options": "PG Student Record",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "final_submission",
+            "label": "Final Submission",
+            "fieldtype": "Link",
+            "options": "PG Final Thesis Submission"
+        },
+        {
+            "fieldname": "thesis_title",
+            "label": "Thesis Title",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "archive_date",
+            "label": "Archive Date",
+            "fieldtype": "Date",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "file",
+            "label": "Archived File",
+            "fieldtype": "Attach",
+            "reqd": 1
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+Dear Supervisor, the student {{ doc.student_name }} has requested supervisor certification for their thesis titled '{{ doc.thesis_title }}'. Please review the submission and certify online.

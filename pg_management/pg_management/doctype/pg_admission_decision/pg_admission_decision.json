@@ -1,0 +1,80 @@
+{
+    "name": "PG Admission Decision",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "ADEC-YYYY-.####",
+            "default": "ADEC-YYYY-."
+        },
+        {
+            "fieldname": "applicant",
+            "label": "Applicant",
+            "fieldtype": "Link",
+            "options": "PG Applicant",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "decision",
+            "label": "Decision",
+            "fieldtype": "Select",
+            "options": "Recommended\nApproved by Faculty Board\nRatified by Senate\nRejected",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "decision_date",
+            "label": "Decision Date",
+            "fieldtype": "Date",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "remarks",
+            "label": "Remarks",
+            "fieldtype": "Text"
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

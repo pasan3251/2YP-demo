@@ -1,0 +1,108 @@
+{
+ "app": "pg_management",
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Department Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Admin-Apps\"}}]",
+ "creation": "2026-03-15 00:43:18.371727",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "study",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "PG Department Portal",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Applications (HoD Review)",
+   "link_count": 0,
+   "link_to": "PG Applicant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Progress Reports",
+   "link_count": 0,
+   "link_to": "PG Progress Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Review Panel Approvals",
+   "link_count": 0,
+   "link_to": "PG Review Panel",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Thesis Submissions",
+   "link_count": 0,
+   "link_to": "PG Thesis Submission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-15 17:11:55.020918",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Department Portal",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "PG Head of Department"
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Applications (HoD Review)",
+   "link_to": "PG Applicant",
+   "stats_filter": "[[\"workflow_state\",\"=\",\"Pending Preliminary Check\"]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Progress Reports",
+   "link_to": "PG Progress Report",
+   "stats_filter": "[[\"workflow_state\",\"=\",\"HoD Review\"]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Review Panel Approvals",
+   "link_to": "PG Review Panel",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Thesis Submissions",
+   "link_to": "PG Thesis Submission",
+   "stats_filter": "",
+   "type": "DocType"
+  }
+ ],
+ "title": "PG Department Portal",
+ "type": "Workspace"
+}

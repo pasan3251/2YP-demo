@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-14 23:03:44.946981",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "sec_recip",
+  "recipient_user",
+  "recipient_email",
+  "sec_ref",
+  "related_event",
+  "related_doctype",
+  "related_document_name",
+  "sec_cont",
+  "notification_type",
+  "delivery_channel",
+  "subject",
+  "message_summary",
+  "sec_status",
+  "sent_timestamp",
+  "delivery_status",
+  "error_details",
+  "trigger_source"
+ ],
+ "fields": [
+  {
+   "default": "NOTIF-YYYY-.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "NOTIF-YYYY-.####\nNOTIF-YYYY-."
+  },
+  {
+   "fieldname": "sec_recip",
+   "fieldtype": "Section Break",
+   "label": "Recipient Info"
+  },
+  {
+   "fieldname": "recipient_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Recipient User",
+   "options": "User"
+  },
+  {
+   "fieldname": "recipient_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recipient Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_ref",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "related_event",
+   "fieldtype": "Link",
+   "label": "Related Event",
+   "options": "PG Academic Event"
+  },
+  {
+   "fieldname": "related_doctype",
+   "fieldtype": "Link",
+   "label": "Related DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "related_document_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Related Document Name",
+   "options": "related_doctype"
+  },
+  {
+   "fieldname": "sec_cont",
+   "fieldtype": "Section Break",
+   "label": "Notification Content"
+  },
+  {
+   "fieldname": "notification_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Notification Type",
+   "options": "\nSubmission Confirmation\nReviewer Assignment\nCorrection Requested\nApproval Notice\nRejection Notice\nDeadline Reminder\nOverdue Warning\nEscalation Alert\nThesis Evaluation Reminder\nFinal Archive Confirmation"
+  },
+  {
+   "default": "Email",
+   "fieldname": "delivery_channel",
+   "fieldtype": "Select",
+   "label": "Delivery Channel",
+   "options": "Email\nIn-App"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "message_summary",
+   "fieldtype": "Text Editor",
+   "label": "Message Summary"
+  },
+  {
+   "fieldname": "sec_status",
+   "fieldtype": "Section Break",
+   "label": "Delivery Status"
+  },
+  {
+   "fieldname": "sent_timestamp",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Sent Timestamp"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "delivery_status",
+   "fieldtype": "Select",
+   "label": "Delivery Status",
+   "options": "Pending\nSent\nFailed"
+  },
+  {
+   "fieldname": "error_details",
+   "fieldtype": "Text",
+   "label": "Error Details"
+  },
+  {
+   "fieldname": "trigger_source",
+   "fieldtype": "Data",
+   "label": "Trigger Source"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-14 23:03:44.946981",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "PG Notification Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

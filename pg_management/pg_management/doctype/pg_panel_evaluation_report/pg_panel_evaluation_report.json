@@ -1,0 +1,100 @@
+{
+    "name": "PG Panel Evaluation Report",
+    "module": "PG Management",
+    "custom": 0,
+    "is_submittable": 1,
+    "autoname": "naming_series:",
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Naming Series",
+            "fieldtype": "Select",
+            "options": "PER-YYYY-.####",
+            "default": "PER-YYYY-."
+        },
+        {
+            "fieldname": "annual_review",
+            "label": "Annual Review",
+            "fieldtype": "Link",
+            "options": "PG Annual Review",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "panel",
+            "label": "Review Panel",
+            "fieldtype": "Link",
+            "options": "PG Review Panel",
+            "reqd": 1
+        },
+        {
+            "fieldname": "evaluation_document",
+            "label": "Evaluation Document",
+            "fieldtype": "Attach"
+        },
+        {
+            "fieldname": "recommendation",
+            "label": "Recommendation",
+            "fieldtype": "Select",
+            "options": "Satisfactory\nUnsatisfactory\nResubmit",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "comments",
+            "label": "Comments",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Draft\nSubmitted",
+            "default": "Draft",
+            "in_list_view": 1
+        }
+    ],
+    "doctype": "DocType",
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
+}

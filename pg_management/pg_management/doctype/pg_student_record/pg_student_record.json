@@ -1,0 +1,117 @@
+{
+    "name": "PG Student Record",
+    "module": "PG Management",
+    "custom": 0,
+    "autoname": "field:registration_number",
+    "fields": [
+        {
+            "fieldname": "registration_number",
+            "label": "Registration Number",
+            "fieldtype": "Data",
+            "unique": 1,
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "student_name",
+            "label": "Student Name",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "email",
+            "label": "Email",
+            "fieldtype": "Data",
+            "options": "Email",
+            "reqd": 1
+        },
+        {
+            "fieldname": "programme",
+            "label": "Programme",
+            "fieldtype": "Link",
+            "options": "PG Programme",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "enrollment_type",
+            "label": "Enrollment Type",
+            "fieldtype": "Select",
+            "options": "Full Time\nPart Time\nProvisional",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_of_registration",
+            "label": "Date of Registration",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "effective_date_of_degree",
+            "label": "Effective Date of Degree",
+            "fieldtype": "Date"
+        },
+        {
+            "fieldname": "research_title",
+            "label": "Research Title",
+            "fieldtype": "Small Text"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Active\nLeave of Absence\nWithdrawn\nGraduated",
+            "default": "Active",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "supervisors",
+            "label": "Supervisors",
+            "fieldtype": "Table",
+            "options": "PG Supervisor Assignment"
+        },
+        {
+            "fieldname": "external_examiners",
+            "label": "External Examiners",
+            "fieldtype": "Table",
+            "options": "PG Examiner Assignment"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "PG Coordinator",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Head of Department",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "PG Supervisor",
+            "read": 1
+        },
+        {
+            "role": "PG Student",
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ],
+    "doctype": "DocType"
+}

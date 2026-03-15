@@ -1,0 +1,1 @@
+The {{ doc.report_type }} Progress Report for {{ doc.student_name }} requires the nomination of a Review Panel.

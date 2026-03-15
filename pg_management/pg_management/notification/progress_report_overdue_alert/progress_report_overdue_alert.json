@@ -1,0 +1,42 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Overdue'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:24:57.173303",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Progress Report",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "The {{ doc.report_type }} progress report for {{ doc.student_name }} is now marked as OVERDUE.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:24:57.173303",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Progress Report Overdue Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "student_email"
+  },
+  {
+   "receiver_by_document_field": "supervisor"
+  },
+  {
+   "receiver_by_role": "PG Coordinator"
+  },
+  {
+   "receiver_by_role": "PG Head of Department"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "URGENT: {{ doc.report_type }} Progress Report OVERDUE",
+ "value_changed": "workflow_state"
+}

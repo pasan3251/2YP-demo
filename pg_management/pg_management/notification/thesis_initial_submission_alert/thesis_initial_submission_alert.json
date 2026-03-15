@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Submitted'",
+ "condition_type": "Python",
+ "creation": "2026-03-14 22:52:55.713495",
+ "date_changed": "modified",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "PG Thesis Submission",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "The thesis titled '{{ doc.thesis_title }}' by {{ doc.student_name }} has been formally submitted and is now awaiting Preliminary Check.",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-03-14 22:52:55.713495",
+ "modified_by": "Administrator",
+ "module": "PG Management",
+ "name": "Thesis Initial Submission Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "PG Coordinator"
+  },
+  {
+   "receiver_by_role": "PG Head of Department"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Thesis Submitted: {{ doc.student_name }}"
+}
