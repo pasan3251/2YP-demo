@@ -1,18 +1,14 @@
 {
- "app": "pg_management",
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Supervisor Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Sup-Students\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Sup-Pending-Reviews\"}}]",
- "creation": "2026-03-15 00:43:18.314383",
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>PG Supervisor Portal</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Assigned Students\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Progress Reviews Pending\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Thesis Certifications Pending\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Notifications\", \"col\": 4}}]",
+ "creation": "2026-03-15 19:56:41.282773",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "hide_custom": 0,
- "icon": "study",
  "idx": 0,
- "indicator_color": "green",
  "is_hidden": 0,
  "label": "PG Supervisor Portal",
- "link_type": "DocType",
  "links": [
   {
    "hidden": 0,
@@ -65,9 +61,8 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-15 17:11:54.934548",
+ "modified": "2026-03-15 19:56:41.282773",
  "modified_by": "Administrator",
- "module": "PG Management",
  "name": "PG Supervisor Portal",
  "number_cards": [],
  "owner": "Administrator",
@@ -81,43 +76,27 @@
  "sequence_id": 0.0,
  "shortcuts": [
   {
-   "color": "Grey",
-   "doc_view": "",
+   "color": "Blue",
    "label": "Assigned Students",
-   "link_to": "PG Student Record",
-   "stats_filter": "",
+   "link_to": "PG Student Registration",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Progress Reviews",
+   "color": "Green",
+   "label": "Progress Reviews Pending",
    "link_to": "PG Progress Report",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Thesis Certifications",
+   "color": "Purple",
+   "label": "Thesis Certifications Pending",
    "link_to": "PG Thesis Submission",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Events",
-   "link_to": "PG Academic Event",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Notifications",
+   "color": "Orange",
+   "label": "My Notifications",
    "link_to": "PG Notification Log",
-   "stats_filter": "",
    "type": "DocType"
   }
  ],

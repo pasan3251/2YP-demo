@@ -1,18 +1,14 @@
 {
- "app": "pg_management",
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Examiner Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Exam-Evaluations\"}}]",
- "creation": "2026-03-15 00:43:18.332629",
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>PG Examiner Portal</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Assigned Theses\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pending Evaluations\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Notifications\", \"col\": 4}}]",
+ "creation": "2026-03-15 19:56:41.282773",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "hide_custom": 0,
- "icon": "study",
  "idx": 0,
- "indicator_color": "green",
  "is_hidden": 0,
  "label": "PG Examiner Portal",
- "link_type": "DocType",
  "links": [
   {
    "hidden": 0,
@@ -55,9 +51,8 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-15 17:11:54.966427",
+ "modified": "2026-03-15 19:56:41.282773",
  "modified_by": "Administrator",
- "module": "PG Management",
  "name": "PG Examiner Portal",
  "number_cards": [],
  "owner": "Administrator",
@@ -71,35 +66,21 @@
  "sequence_id": 0.0,
  "shortcuts": [
   {
-   "color": "Grey",
-   "doc_view": "",
+   "color": "Purple",
    "label": "Assigned Theses",
-   "link_to": "PG Examiner Assignment",
-   "stats_filter": "",
+   "link_to": "PG Thesis Submission",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "My Evaluations",
+   "color": "Red",
+   "label": "Pending Evaluations",
    "link_to": "PG Thesis Evaluation",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Visible Documents",
-   "link_to": "PG Document Repository",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Notifications",
+   "color": "Orange",
+   "label": "My Notifications",
    "link_to": "PG Notification Log",
-   "stats_filter": "",
    "type": "DocType"
   }
  ],
