@@ -1,0 +1,69 @@
+{
+ "app": "pg_management",
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Supervisor Portal</span>\", \"level\": 3, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Assigned Students\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Progress Reviews Pending\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Thesis Certifications Pending\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Notifications\", \"col\": 4}}, {\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>At a Glance</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"number_card\", \"data\": {\"number_card_name\": \"Students Assigned\", \"col\": 4}}, {\"type\": \"number_card\", \"data\": {\"number_card_name\": \"Pending Progress Reviews\", \"col\": 4}}, {\"type\": \"number_card\", \"data\": {\"number_card_name\": \"Pending Thesis Certifications\", \"col\": 4}}]",
+ "creation": "2026-03-15 00:43:18.279601",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "PG Supervisor Portal",
+ "module": "PG Management",
+ "name": "PG Supervisor Portal",
+ "number_cards": [
+  {
+   "number_card_name": "Students Assigned"
+  },
+  {
+   "number_card_name": "Pending Progress Reviews"
+  },
+  {
+   "number_card_name": "Pending Thesis Certifications"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [
+  {
+   "role": "PG Supervisor"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "label": "Assigned Students",
+   "link_to": "PG Student Registration",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Green",
+   "label": "Progress Reviews Pending",
+   "link_to": "PG Progress Report",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Purple",
+   "label": "Thesis Certifications Pending",
+   "link_to": "PG Thesis Submission",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Orange",
+   "label": "My Notifications",
+   "link_to": "PG Notification Log",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ],
+ "title": "PG Supervisor Portal",
+ "type": "Workspace",
+ "links": []
+}

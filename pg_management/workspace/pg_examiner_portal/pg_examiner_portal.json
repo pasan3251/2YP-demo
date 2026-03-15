@@ -1,0 +1,59 @@
+{
+ "app": "pg_management",
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Examiner Portal</span>\", \"level\": 3, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Assigned Theses\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pending Evaluations\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Notifications\", \"col\": 4}}, {\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>At a Glance</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"number_card\", \"data\": {\"number_card_name\": \"Theses Assigned\", \"col\": 4}}, {\"type\": \"number_card\", \"data\": {\"number_card_name\": \"Evaluations Pending\", \"col\": 4}}]",
+ "creation": "2026-03-15 00:43:18.279601",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "file",
+ "idx": 0,
+ "indicator_color": "purple",
+ "is_hidden": 0,
+ "label": "PG Examiner Portal",
+ "module": "PG Management",
+ "name": "PG Examiner Portal",
+ "number_cards": [
+  {
+   "number_card_name": "Theses Assigned"
+  },
+  {
+   "number_card_name": "Evaluations Pending"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [
+  {
+   "role": "PG Examiner"
+  }
+ ],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Purple",
+   "label": "Assigned Theses",
+   "link_to": "PG Thesis Submission",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Red",
+   "label": "Pending Evaluations",
+   "link_to": "PG Thesis Evaluation",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Orange",
+   "label": "My Notifications",
+   "link_to": "PG Notification Log",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ],
+ "title": "PG Examiner Portal",
+ "type": "Workspace",
+ "links": []
+}
