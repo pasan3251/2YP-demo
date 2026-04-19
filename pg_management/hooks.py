@@ -24,20 +24,20 @@ app_logo_url = "/assets/pg_management/images/logo.png"
 doc_events = {
     "PG Applicant": {
         "validate": "pg_management.security_hooks.validate_applicant",
-        "on_update": "pg_management.pg_management.pg_events.handle_applicant"
+        "on_update": "pg_management.pg_events.handle_applicant"
     },
     "PG Progress Report": {
         "validate": "pg_management.security_hooks.validate_progress_report",
         "on_update": "pg_management.notifications.validate_and_send_review_emails"
     },
     "PG Student Registration": {
-        "on_update": "pg_management.pg_management.pg_events.handle_registration"
+        "on_update": "pg_management.pg_events.handle_registration"
     },
     "PG Thesis Submission": {
-        "on_update": "pg_management.pg_management.pg_events.handle_thesis"
+        "on_update": "pg_management.pg_events.handle_thesis"
     },
     "File": {
-        "after_insert": "pg_management.pg_management.pg_events.handle_file_upload"
+        "after_insert": "pg_management.pg_events.handle_file_upload"
     }
 }
 
@@ -47,24 +47,24 @@ doc_events = {
 override_whitelisted_methods = {
     "pg_management.api.get_student_status": "pg_management.api.get_student_status",
     "pg_management.api.submit_external_application": "pg_management.api.submit_external_application",
-    "pg_management.api_events_repo.list_student_events": "pg_management.pg_management.api_events_repo.list_student_events",
-    "pg_management.api_events_repo.list_upcoming_events": "pg_management.pg_management.api_events_repo.list_upcoming_events",
-    "pg_management.api_events_repo.list_overdue_events": "pg_management.pg_management.api_events_repo.list_overdue_events",
-    "pg_management.api_events_repo.mark_event_completed": "pg_management.pg_management.api_events_repo.mark_event_completed",
-    "pg_management.api_events_repo.list_user_notifications": "pg_management.pg_management.api_events_repo.list_user_notifications",
-    "pg_management.api_events_repo.fetch_document_notifications": "pg_management.pg_management.api_events_repo.fetch_document_notifications",
-    "pg_management.api_events_repo.resend_notification": "pg_management.pg_management.api_events_repo.resend_notification",
-    "pg_management.api_events_repo.list_student_documents": "pg_management.pg_management.api_events_repo.list_student_documents",
-    "pg_management.api_events_repo.fetch_workflow_documents": "pg_management.pg_management.api_events_repo.fetch_workflow_documents",
-    "pg_management.api_events_repo.fetch_visible_documents": "pg_management.pg_management.api_events_repo.fetch_visible_documents"
+    "pg_management.api_events_repo.list_student_events": "pg_management.api_events_repo.list_student_events",
+    "pg_management.api_events_repo.list_upcoming_events": "pg_management.api_events_repo.list_upcoming_events",
+    "pg_management.api_events_repo.list_overdue_events": "pg_management.api_events_repo.list_overdue_events",
+    "pg_management.api_events_repo.mark_event_completed": "pg_management.api_events_repo.mark_event_completed",
+    "pg_management.api_events_repo.list_user_notifications": "pg_management.api_events_repo.list_user_notifications",
+    "pg_management.api_events_repo.fetch_document_notifications": "pg_management.api_events_repo.fetch_document_notifications",
+    "pg_management.api_events_repo.resend_notification": "pg_management.api_events_repo.resend_notification",
+    "pg_management.api_events_repo.list_student_documents": "pg_management.api_events_repo.list_student_documents",
+    "pg_management.api_events_repo.fetch_workflow_documents": "pg_management.api_events_repo.fetch_workflow_documents",
+    "pg_management.api_events_repo.fetch_visible_documents": "pg_management.api_events_repo.fetch_visible_documents"
 }
 
 # Scheduled Tasks (Cron)
 # ----------------------
 scheduler_events = {
     "daily_long": [
-        "pg_management.pg_management.tasks.generate_progress_reports",
-        "pg_management.pg_management.tasks.process_academic_events"
+        "pg_management.tasks.generate_progress_reports",
+        "pg_management.tasks.process_academic_events"
     ]
 }
 
@@ -73,3 +73,12 @@ scheduler_events = {
 
 # Setup scripts to run after app installation
 after_install = "pg_management.setup.after_install"
+
+
+role_home_page = {
+    "PG Student": "pg-student-portal",
+    "PG Supervisor": "pg-supervisor-portal",
+    "PG Examiner": "pg-examiner-portal",
+    "PG Coordinator": "pg-coordinator-portal",
+    "PG Head of Department": "pg-department-portal",
+}

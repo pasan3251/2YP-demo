@@ -58,3 +58,11 @@ def send_reminder_email(student_rec, interval_type):
         frappe.sendmail(recipients=[student_rec.email], subject=subject, message=message)
     except Exception as e:
         frappe.log_error(f"Failed to send reminder for student {student_rec.name}", "Scheduled Notifications Failure")
+
+def generate_progress_reports():
+    """Alias called by scheduler - runs progress report deadline checks"""
+    check_progress_report_deadlines()
+
+def process_academic_events():
+    """Placeholder for academic event processing"""
+    pass
