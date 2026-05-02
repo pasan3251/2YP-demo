@@ -19,7 +19,7 @@ class PGAcademicEvent(Document):
             
             # Auto-cancel irrelevant events for dormant students
             if getattr(self, "linked_pg_student_record", None):
-                stu_status = frappe.db.get_value("PG Student Record", self.linked_pg_student_record, "enrollment_status")
+                stu_status = frappe.db.get_value("PG Student Record", self.linked_pg_student_record, "status")
                 if stu_status in ["Withdrawn", "Cancelled", "Completed", "Alumni"]:
                     self.status = "Cancelled"
                     self.cancel_reason = f"Student is {stu_status}"

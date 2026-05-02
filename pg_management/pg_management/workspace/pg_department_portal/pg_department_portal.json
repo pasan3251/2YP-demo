@@ -1,18 +1,14 @@
 {
- "app": "pg_management",
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Department Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Admin-Apps\"}}]",
- "creation": "2026-03-15 00:43:18.371727",
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>PG Department Portal</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Applications\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Registrations\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Progress Reports\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Theses\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Academic Events\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Escalations\", \"col\": 4}}]",
+ "creation": "2026-03-15 19:56:41.282773",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "hide_custom": 0,
- "icon": "study",
  "idx": 0,
- "indicator_color": "green",
  "is_hidden": 0,
  "label": "PG Department Portal",
- "link_type": "DocType",
  "links": [
   {
    "hidden": 0,
@@ -55,9 +51,8 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-15 17:11:55.020918",
+ "modified": "2026-03-15 19:56:41.282773",
  "modified_by": "Administrator",
- "module": "PG Management",
  "name": "PG Department Portal",
  "number_cards": [],
  "owner": "Administrator",
@@ -71,35 +66,39 @@
  "sequence_id": 0.0,
  "shortcuts": [
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Applications (HoD Review)",
-   "link_to": "PG Applicant",
-   "stats_filter": "[[\"workflow_state\",\"=\",\"Pending Preliminary Check\"]]",
+   "color": "Blue",
+   "label": "All Applications",
+   "link_to": "PG Application",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Progress Reports",
+   "color": "Green",
+   "label": "All Registrations",
+   "link_to": "PG Student Registration",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "label": "All Progress Reports",
    "link_to": "PG Progress Report",
-   "stats_filter": "[[\"workflow_state\",\"=\",\"HoD Review\"]]",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Review Panel Approvals",
-   "link_to": "PG Review Panel",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Thesis Submissions",
+   "color": "Purple",
+   "label": "All Theses",
    "link_to": "PG Thesis Submission",
-   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "label": "Academic Events",
+   "link_to": "PG Academic Event",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "label": "Escalations",
+   "link_to": "PG Notification Log",
    "type": "DocType"
   }
  ],

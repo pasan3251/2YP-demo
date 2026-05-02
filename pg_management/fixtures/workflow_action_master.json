@@ -1,0 +1,261 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-09 12:38:13.332802",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-09 12:38:13.334339",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-09 12:38:13.335212",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.606254",
+  "name": "Submit",
+  "workflow_action_name": "Submit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.609138",
+  "name": "Forward",
+  "workflow_action_name": "Forward"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.611512",
+  "name": "Schedule Interview",
+  "workflow_action_name": "Schedule Interview"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.613266",
+  "name": "Evaluate Proposal",
+  "workflow_action_name": "Evaluate Proposal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.614636",
+  "name": "Ratify",
+  "workflow_action_name": "Ratify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.616362",
+  "name": "Return for Revision",
+  "workflow_action_name": "Return for Revision"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 02:04:28.617635",
+  "name": "Evaluate",
+  "workflow_action_name": "Evaluate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.220091",
+  "name": "Submit for Review",
+  "workflow_action_name": "Submit for Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.229038",
+  "name": "Forward to HoD",
+  "workflow_action_name": "Forward to HoD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.230159",
+  "name": "Forward to Senate",
+  "workflow_action_name": "Forward to Senate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.233348",
+  "name": "Activate",
+  "workflow_action_name": "Activate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.234545",
+  "name": "Renew",
+  "workflow_action_name": "Renew"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.235702",
+  "name": "Flag Overdue",
+  "workflow_action_name": "Flag Overdue"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.237046",
+  "name": "Lapse",
+  "workflow_action_name": "Lapse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.238147",
+  "name": "Withdraw",
+  "workflow_action_name": "Withdraw"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.239330",
+  "name": "Assign Examiners",
+  "workflow_action_name": "Assign Examiners"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.240695",
+  "name": "Complete Examination",
+  "workflow_action_name": "Complete Examination"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.241881",
+  "name": "Request Corrections",
+  "workflow_action_name": "Request Corrections"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.243083",
+  "name": "Resubmit",
+  "workflow_action_name": "Resubmit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:24:20.244194",
+  "name": "Archive",
+  "workflow_action_name": "Archive"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:52.912916",
+  "name": "Submit for Registration",
+  "workflow_action_name": "Submit for Registration"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.060255",
+  "name": "Pending Coordinator Review",
+  "workflow_action_name": "Pending Coordinator Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.061772",
+  "name": "Pending HoD Approval",
+  "workflow_action_name": "Pending HoD Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.063046",
+  "name": "Flag as Overdue",
+  "workflow_action_name": "Flag as Overdue"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.064242",
+  "name": "Request Extension",
+  "workflow_action_name": "Request Extension"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.065398",
+  "name": "Mark Lapsed",
+  "workflow_action_name": "Mark Lapsed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.066531",
+  "name": "Certify Thesis",
+  "workflow_action_name": "Certify Thesis"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.067787",
+  "name": "Submit Thesis",
+  "workflow_action_name": "Submit Thesis"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.069511",
+  "name": "Submit Evaluation",
+  "workflow_action_name": "Submit Evaluation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.071113",
+  "name": "Request Minor Corrections",
+  "workflow_action_name": "Request Minor Corrections"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.073453",
+  "name": "Request Major Corrections",
+  "workflow_action_name": "Request Major Corrections"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.075128",
+  "name": "Submit Corrections",
+  "workflow_action_name": "Submit Corrections"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.076929",
+  "name": "Approve Final Submission",
+  "workflow_action_name": "Approve Final Submission"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-17 10:25:58.078518",
+  "name": "Archive Thesis",
+  "workflow_action_name": "Archive Thesis"
+ }
+]

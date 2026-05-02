@@ -1,18 +1,14 @@
 {
- "app": "pg_management",
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h3'>PG Coordinator Portal Dashboard</span>\", \"level\": 3}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Admin-Apps\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Admin-Theses\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"PG-NC-Admin-Panels\"}}]",
- "creation": "2026-03-15 00:43:18.350849",
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>PG Coordinator Portal</span>\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Applications\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pending Approvals\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registrations\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Renewals Due\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Progress Reviews\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Thesis Management\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Academic Events\", \"col\": 4}}]",
+ "creation": "2026-03-15 19:56:41.282773",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "hide_custom": 0,
- "icon": "study",
  "idx": 0,
- "indicator_color": "green",
  "is_hidden": 0,
  "label": "PG Coordinator Portal",
- "link_type": "DocType",
  "links": [
   {
    "hidden": 0,
@@ -95,9 +91,8 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-15 17:11:54.991745",
+ "modified": "2026-03-15 19:56:41.282773",
  "modified_by": "Administrator",
- "module": "PG Management",
  "name": "PG Coordinator Portal",
  "number_cards": [],
  "owner": "Administrator",
@@ -111,67 +106,45 @@
  "sequence_id": 0.0,
  "shortcuts": [
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Applications",
-   "link_to": "PG Applicant",
-   "stats_filter": "",
+   "color": "Blue",
+   "label": "All Applications",
+   "link_to": "PG Application",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
+   "color": "Red",
+   "label": "Pending Approvals",
+   "link_to": "PG Admission Decision",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
    "label": "Registrations",
    "link_to": "PG Student Registration",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Progress Monitoring",
+   "color": "Yellow",
+   "label": "Renewals Due",
+   "link_to": "PG Registration Renewal",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "label": "Progress Reviews",
    "link_to": "PG Progress Report",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
-   "color": "Grey",
-   "doc_view": "",
+   "color": "Purple",
    "label": "Thesis Management",
    "link_to": "PG Thesis Submission",
-   "stats_filter": "",
    "type": "DocType"
   },
   {
    "color": "Grey",
-   "doc_view": "",
-   "label": "Review Panels",
-   "link_to": "PG Review Panel",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
    "label": "Academic Events",
    "link_to": "PG Academic Event",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "Notifications",
-   "link_to": "PG Notification Log",
-   "stats_filter": "",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "System Repository",
-   "link_to": "PG Document Repository",
-   "stats_filter": "",
    "type": "DocType"
   }
  ],
