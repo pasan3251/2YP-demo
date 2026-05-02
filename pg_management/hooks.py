@@ -82,3 +82,12 @@ role_home_page = {
     "PG Coordinator": "pg-coordinator-portal",
     "PG Head of Department": "pg-department-portal",
 }
+
+fixtures = [
+    "Workflow",
+    "Workflow State",
+    "Workflow Action Master",
+    "Custom Field",
+    "Client Script",
+    "Property Setter"
+]
